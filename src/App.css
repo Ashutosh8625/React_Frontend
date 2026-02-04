@@ -1,0 +1,892 @@
+/* ===== Global polish ===== */
+
+body {
+  background: #f3f4f6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===== Main Card ===== */
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== Headings ===== */
+
+section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.8rem;
+}
+
+section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* ===== Description ===== */
+
+section p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Section spacing ===== */
+
+.space-y-4 {
+  margin-bottom: 2.2rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1.2rem;
+}
+
+/* ===== Flex layout spacing ===== */
+
+.flex {
+  gap: 14px;
+}
+
+/* ===== Button enhancements ===== */
+
+button {
+  border-radius: 14px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover lift */
+
+button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+/* Glow by color */
+
+button.bg-blue-500:hover {
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.45);
+}
+
+button.bg-gray-500:hover {
+  box-shadow: 0 10px 25px rgba(107, 114, 128, 0.45);
+}
+
+button.bg-red-500:hover {
+  box-shadow: 0 10px 25px rgba(239, 68, 68, 0.45);
+}
+
+button.bg-green-500:hover {
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.45);
+}
+
+/* Click press */
+
+button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+/* Disabled refinement */
+
+button:disabled {
+  filter: grayscale(0.4);
+}
+
+/* ===== Counter box ===== */
+
+.bg-blue-50 {
+  background: linear-gradient(135deg, #e0ecff, #f0f7ff);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.15);
+}
+
+.bg-blue-50 span {
+  font-size: 1.3rem;
+}
+
+/* ===== Responsive tweak ===== */
+
+@media (max-width: 600px) {
+  section {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section h3 {
+    font-size: 1.1rem;
+  }
+}
+section {
+  position: relative;
+  top: 80px;
+}
+/* ===== Section Styling ===== */
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  transition: all 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Headings ===== */
+
+section h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.6rem;
+}
+
+section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== Paragraphs ===== */
+
+section p {
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+/* ===== Card Enhancements ===== */
+
+section > div .border-l-4 {
+  padding: 20px;
+  background: white;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card hover effect */
+
+section > div .border-l-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* Soft inner glow */
+
+section > div .border-l-4::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+/* ===== Card title ===== */
+
+section > div .border-l-4 h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* ===== Strong text ===== */
+
+section strong {
+  color: #1f2937;
+}
+
+/* ===== Container spacing improvements ===== */
+
+.space-y-6 > * + * {
+  margin-top: 2rem;
+}
+
+/* ===== Grid polish ===== */
+
+.grid {
+  align-items: stretch;
+}
+
+/* ===== Responsive tweak ===== */
+
+@media (max-width: 640px) {
+  section {
+    margin: 20px;
+    padding: 24px;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section h3 {
+    font-size: 1.1rem;
+  }
+}
+/* =============================== */
+/* Force 2x2 Card Grid Layout */
+/* =============================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);   /* 2 cards per row */
+  gap: 22px;
+  align-items: stretch;
+}
+
+/* Make cards same height */
+
+.border-l-4 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Keep content neat */
+
+.border-l-4 p {
+  margin-bottom: 6px;
+}
+
+/* Responsive (stack on mobile) */
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================================= */
+/* Quick Action Card Button Layout */
+/* ================================= */
+
+/* Stack buttons vertically */
+
+.border-purple-500 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make Create New long + purple */
+
+.border-purple-500 button:first-child {
+  width: 100%;
+  background: #a855f7;   /* same as purple card */
+  color: white;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  border-radius: 10px;
+}
+
+/* Gray View All button */
+
+.border-purple-500 button:last-child {
+  width: 100%;
+  background: #6b7280;
+  color: white;
+  padding: 12px 0;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Hover polish */
+
+.border-purple-500 button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-2px);
+}
+/* =============================== */
+/* Soft colored backgrounds for cards */
+/* =============================== */
+
+.border-teal-500 {
+  background: #ecfeff !important;   /* light teal */
+}
+
+.border-green-500 {
+  background: #ecfdf3 !important;   /* light green */
+}
+
+.border-purple-500 {
+  background: #f5f3ff !important;   /* light purple */
+}
+
+.border-red-500 {
+  background: #fef2f2 !important;   /* light red */
+}
+/* ===== Page Layout ===== */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f5f9;
+}
+
+.space-y-8 {
+  padding: 40px;
+}
+
+/* ===== Profile Card ===== */
+
+.profile-card {
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* ===== Header ===== */
+
+.profile-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Text ===== */
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-info p {
+  margin: 4px 0 12px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ===== Badges ===== */
+
+.badges {
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ===== Stats ===== */
+
+.stats {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.7);
+  padding: 14px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.stat-box h4 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.stat-box span {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* ===== Buttons ===== */
+
+.actions {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ===== Themes ===== */
+
+/* Purple Theme */
+.purple-bg {
+  background: linear-gradient(135deg, #e9d5ff, #bfdbfe);
+  color: #1f2933;
+}
+
+.purple-avatar {
+  background: #c4b5fd;
+}
+
+.purple-badge {
+  background: #ddd6fe;
+}
+
+.purple-primary {
+  background: #7c3aed;
+  color: white;
+}
+
+.purple-secondary {
+  background: #a78bfa;
+  color: white;
+}
+
+/* Green Theme */
+
+.green-bg {
+  background: linear-gradient(135deg, #d1fae5, #99f6e4);
+  color: #064e3b;
+}
+
+.green-avatar {
+  background: #6ee7b7;
+}
+
+.green-badge {
+  background: #a7f3d0;
+}
+
+.green-primary {
+  background: #10b981;
+  color: white;
+}
+
+.green-secondary {
+  background: #34d399;
+  color: white;
+}
+body {
+  background:#0f172a;
+  margin:0;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+/* Page layout */
+
+.page-wrapper{
+  padding:40px;
+  display:flex;
+  justify-content:center;
+}
+
+.main-box{
+  background:white;
+  padding:28px 34px 36px;
+  border-radius:14px;
+  width:100%;
+  max-width:1100px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.main-box h2{
+  margin:0;
+  font-size:22px;
+  font-weight:700;
+}
+
+.subtitle{
+  font-size:14px;
+  color:#555;
+  margin:6px 0 20px;
+}
+
+.section-title{
+  font-size:16px;
+  font-weight:600;
+  margin-bottom:16px;
+}
+
+/* Cards layout */
+
+.cards-row{
+  display:flex;
+  gap:24px;
+}
+
+/* Card */
+
+.profile-card{
+  flex:1;
+  padding:22px;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Header */
+
+.profile-header{
+  display:flex;
+  gap:14px;
+  align-items:center;
+}
+
+.avatar{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:26px;
+}
+
+.profile-info h3{
+  margin:0;
+  font-size:17px;
+  font-weight:700;
+}
+
+.profile-info p{
+  margin:3px 0 8px;
+  font-size:13px;
+  color:#444;
+}
+
+/* Badges */
+
+.badges{
+  display:flex;
+  gap:8px;
+}
+
+.badge{
+  padding:4px 10px;
+  border-radius:14px;
+  font-size:12px;
+  font-weight:600;
+}
+
+/* Stats */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  margin-top:18px;
+  border-top:1px solid rgba(0,0,0,0.15);
+  padding-top:14px;
+  text-align:center;
+}
+
+.stat-box h4{
+  margin:0;
+  font-size:18px;
+  font-weight:700;
+}
+
+.stat-box span{
+  font-size:12px;
+  color:#555;
+}
+
+/* Buttons */
+
+.actions{
+  display:flex;
+  gap:12px;
+  margin-top:18px;
+}
+
+.action-btn{
+  flex:1;
+  border:none;
+  padding:8px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+/* ================= THEMES ================= */
+
+/* Purple */
+
+.purple-bg{
+  background:linear-gradient(135deg,#eef2ff,#e0e7ff);
+}
+
+.purple-avatar{
+  background:#c7d2fe;
+}
+
+.purple-badge{
+  background:#ddd6fe;
+}
+
+.purple-primary{
+  background:#a855f7;
+  color:white;
+}
+
+.purple-secondary{
+  background:#e5e7eb;
+}
+
+/* Green */
+
+.green-bg{
+  background:linear-gradient(135deg,#dcfce7,#ccfbf1);
+}
+
+.green-avatar{
+  background:#86efac;
+}
+
+.green-badge{
+  background:#bbf7d0;
+}
+
+.green-primary{
+  background:#22c55e;
+  color:white;
+}
+
+.green-secondary{
+  background:#e5e7eb;
+}
+
+/* Responsive */
+
+@media(max-width:800px){
+  .cards-row{
+    flex-direction:column;
+  }
+}
+/* Reset basics (optional but clean) */
+* {
+  box-sizing: border-box;
+}
+
+/* ================================
+   Main Section Styling
+================================ */
+
+.ref-props {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ================================
+   Headings & Text
+================================ */
+
+.ref-props h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.ref-props p {
+  font-size: 15px;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* ================================
+   Inner Card
+================================ */
+
+.ref-props > div > div {
+  background: #ffffff;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+/* ================================
+   Try it Heading
+================================ */
+
+.ref-props h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+/* ================================
+   Input Styling
+================================ */
+
+.ref-props input {
+  transition: all 0.25s ease;
+  border: 1px solid #d1d5db;
+}
+
+.ref-props input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* ================================
+   Button Container
+================================ */
+
+.ref-props .flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 26px;
+}
+
+/* ================================
+   Modern Animated Buttons
+================================ */
+
+.ref-props button {
+  min-width: 170px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  box-shadow: 
+    0 6px 14px rgba(59, 130, 246, 0.35),
+    inset 0 -2px 0 rgba(255, 255, 255, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+/* Hover Animation */
+
+.ref-props button:hover {
+  transform: translateY(-3px) scale(1.03);
+  filter: brightness(1.08);
+  box-shadow: 
+    0 10px 22px rgba(59, 130, 246, 0.45),
+    inset 0 -2px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Press Effect */
+
+.ref-props button:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 
+    0 4px 10px rgba(59, 130, 246, 0.3),
+    inset 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus Accessibility */
+
+.ref-props button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(59, 130, 246, 0.35),
+    0 8px 18px rgba(59, 130, 246, 0.4);
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 600px) {
+  .ref-props {
+    margin: 30px 14px;
+    padding: 22px;
+  }
+
+  .ref-props > div > div {
+    padding: 22px;
+  }
+
+  .ref-props button {
+    width: 100%;
+  }
+}
+.yellow-card {
+  background-color: #fff8db;
+  border-left: 6px solid #f5c542;
+  padding: 16px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.yellow-card h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.yellow-card ul {
+  padding-left: 22px;
+  margin: 0;
+  list-style-type: disc;   /* ensures bullet dots */
+}
+
+.yellow-card li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
