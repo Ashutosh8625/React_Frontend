@@ -35,7 +35,7 @@ Perfect for improving:
 ## 🛠 Tech Stack
 
 | Tool | Usage |
-|----|------|
+|------|------|
 | React.js | Frontend framework |
 | Tailwind CSS | Styling |
 | Vite | Fast build tool |
@@ -45,6 +45,7 @@ Perfect for improving:
 
 ## 📁 Project Structure
 
+```text
 React_Frontend/
 │
 ├── public/
@@ -53,20 +54,20 @@ React_Frontend/
 ├── src/
 │   ├── assets/
 │   │   └── images/
-│
+│   │
 │   ├── components/
 │   │   ├── Button.jsx
 │   │   ├── UserCard.jsx
 │   │   ├── ComplexProps.jsx
 │   │   ├── ThemeBox.jsx
 │   │   └── Navbar.jsx
-│
+│   │
 │   ├── pages/
 │   │   └── Home.jsx
-│
+│   │
 │   ├── data/
 │   │   └── users.js
-│
+│   │
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
