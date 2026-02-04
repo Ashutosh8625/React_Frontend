@@ -45,3 +45,37 @@ Perfect for improving:
 
 ## 📁 Project Structure
 
+React_Frontend/
+│
+├── public/
+│   └── vite.svg
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+│
+│   ├── components/
+│   │   ├── Button.jsx
+│   │   ├── UserCard.jsx
+│   │   ├── ComplexProps.jsx
+│   │   ├── ThemeBox.jsx
+│   │   └── Navbar.jsx
+│
+│   ├── pages/
+│   │   └── Home.jsx
+│
+│   ├── data/
+│   │   └── users.js
+│
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── tailwind.config.js
+├── postcss.config.js
+├── vite.config.js
+└── README.md
